@@ -4,15 +4,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		ContaCorrente contaCorrente = new ContaCorrente();
-		ContaPoupanca contaPoupanca = new ContaPoupanca();
+		ContaPoupanca contaPoupanca1 = new ContaPoupanca();
+		ContaPoupanca contaPoupanca2 = new ContaPoupanca();
 		
-		contaPoupanca.depositar(1000);
+		contaPoupanca1.depositar(1000);
 		
-		contaPoupanca.transferir(100, contaPoupanca);
-		
-		contaCorrente.imprimirInformacoes();
-		contaPoupanca.imprimirInformacoes();
+		contaPoupanca1.transferir(100, contaPoupanca2);
+
+		contaPoupanca1.imprimirInformacoes();
+		contaPoupanca2.imprimirInformacoes();
 
 	}
 
